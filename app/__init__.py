@@ -1,6 +1,6 @@
 from flask import Flask
-from flask.ext.sqlalchemy import SQLAlchemy
-from flask.ext.restless import APIManager
+from flask_restless import APIManager
+from flask_sqlalchemy import SQLAlchemy
 
 #Initialize the app
 app = Flask(__name__, instance_relative_config=True)
