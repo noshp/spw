@@ -13,7 +13,7 @@ cd into the project folder
 Have `virtualenv` installed on your machine.
 
 ```bash
-virtualenv venv
+virtualenv venv -p python3
 ```
 
 Activate your virtualenv
@@ -27,6 +27,7 @@ pip install -r requirements.txt
 ```
 
 **Running the Flask app**
+
 Export the Flask app in your terminal session
 ```bash
 export FLASK_APP=run.py
