@@ -12,4 +12,5 @@ def about():
 
 @app.route('/guesser', methods=['POST', 'GET'])
 def guesser():
-	return request.args.get('entries', 0, type=str)
+	print("foo")
+	return request.args.get('entries', 'default', type=str)

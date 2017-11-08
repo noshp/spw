@@ -9,6 +9,6 @@ function input_to_db() {
 		$.getJSON($SCRIPT_ROOT + "/guesser", {
 			entries: entries
 		}, function(data){
-			$("#input_result").text(data)
+			console.log(data)
 		})
 	}
