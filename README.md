@@ -32,6 +32,10 @@ Export the Flask app in your terminal session
 ```bash
 export FLASK_APP=run.py
 ```
+Or, in Windows command prompt:
+```
+set FLASK_APP=run.py
+```
 
 Then run the flask app
 ```bash
