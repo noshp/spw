@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, request
 
 from app import app
 
@@ -10,7 +10,6 @@ def index():
 def about():
     return render_template("about.html")
 
-@app.route('/guesser', methods=['POST'])
+@app.route('/guesser', methods=['POST', 'GET'])
 def guesser():
-	print("!!!!!")
-	entries = request.form['entries']
+	return request.args.get('entries', 0, type=str)
