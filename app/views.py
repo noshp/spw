@@ -9,3 +9,8 @@ def index():
 @app.route('/about')
 def about():
     return render_template("about.html")
+
+@app.route('/guesser', methods=['POST'])
+def guesser():
+	print("!!!!!")
+	entries = request.form['entries']

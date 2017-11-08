@@ -1,10 +1,20 @@
-<!-- index.html -->
+<!-- index.html 
+  when a char is entered into search_bar_input:
+  	send contents of search_bar_input to spwguesser.py
+-->
 
 {% extends "base.html" %}
 {% block title %}Home{% endblock %}
 {% block body %}
-<div class="jumbotron">
-    <h1>noshp</h1>
-    <p class="lead">Aloha</p>
+<div id = "search_bar_div" class = "container-fluid" style="position: fixed; top: 15px; left: 15px; width: 50%">
+	<div class = "row">
+		<div class = "col-sm-5">
+			<input type="text" class = "form-control" id = "search_bar_input" onkeyup="input_to_db()">
+		</div>
+	</div>
+	<div class = "row">
+		<div class = "col-sm-6">
+		</div>
+	</div>
 </div>
 {% endblock %}
