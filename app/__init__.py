@@ -4,11 +4,13 @@ from flask_sqlalchemy import SQLAlchemy
 
 #Initialize the app
 app = Flask(__name__, instance_relative_config=True)
-app.config['DEBUG'] = True
-app.config['SQLALCHEMY_DATABASE_URI'] = 'ADD_THE_AWS_PG_CONNECTION_STRING_HERE'
+
+#Turn these on for local dev or if you don't have the config.py
+#app.config['DEBUG'] = True
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'ADD_THE_AWS_PG_CONNECTION_STRING_HERE'
 db = SQLAlchemy(app)
 #load the config file
-#app.config.from_object('config')
+app.config.from_object('config')
 
 #Load the views
 from app import views
