@@ -37,6 +37,11 @@ Or, in Windows command prompt:
 set FLASK_APP=run.py
 ```
 
+Export the DB Connection string in your terminal
+```bash
+export SQLALCHEMY_DATABASE_URI='YOUR_DATABASECONNECTION_STRING'
+```
+
 Then run the flask app
 ```bash
 flask run
